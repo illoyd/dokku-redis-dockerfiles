@@ -1,6 +1,7 @@
 FROM ubuntu:quantal
-MAINTAINER luxifer "luxifer666@gmail.com"
+MAINTAINER jgwmaxwell "john@musicglue.com"
 
+RUN add-apt-repository ppa:chris-lea/redis-server
 RUN apt-get update
 RUN apt-get -y install redis-server
 
